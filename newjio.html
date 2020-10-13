@@ -1,0 +1,2072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .alert {
+            margin-top: 10px;
+        }
+    </style>
+    <title>browseFast/Jio</title>
+</head>
+
+<body class="bg-light">
+
+    <!-------NavBar ------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">browseFast</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Jio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="airtel.html">Airtel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vi.html">Vi</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- alert -->
+        <div class="alert alert-primary" role="alert">
+            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+
+        <!-- prepaid and postpaid plans -->
+        <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-prepaid-tab" data-toggle="pill" href="#pills-pre" role="tab"
+                    aria-controls="pills-pre" aria-selected="true">Prepaid Plans</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-postpaid-tab" data-toggle="pill" href="#pills-post" role="tab"
+                    aria-controls="pills-post" aria-selected="false">Postpaid Plans</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+
+
+            <!-- prepaid Plans -->
+            <div class="tab-pane fade show active" id="pills-pre" role="tabpanel" aria-labelledby="pills-prepaid-tab">
+
+                <!------------------ Prepaid Plan Headings --------------------->
+                <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-popular-tab" data-toggle="pill" href="#pills-popular"
+                            role="tab" aria-controls="pills-popular" aria-selected="true">Popular Plans</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-cricket-tab" data-toggle="pill" href="#pills-cricket" role="tab"
+                            aria-controls="pills-cricket" aria-selected="false">Jio Cricket</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-phone-tab" data-toggle="pill" href="#pills-phone" role="tab"
+                            aria-controls="pills-phone" aria-selected="false">JioPhone</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-data4g-tab" data-toggle="pill" href="#pills-data4g" role="tab"
+                            aria-controls="pills-data4g" aria-selected="false">4G Data Voucher</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-isd-tab" data-toggle="pill" href="#pills-isd" role="tab"
+                            aria-controls="pills-isd" aria-selected="false">ISD</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-roaming-tab" data-toggle="pill" href="#pills-roaming" role="tab"
+                            aria-controls="pills-roaming" aria-selected="false">International Roaming</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-topup-tab" data-toggle="pill" href="#pills-topup" role="tab"
+                            aria-controls="pills-topup" aria-selected="false">Top-Up</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-link-tab" data-toggle="pill" href="#pills-link" role="tab"
+                            aria-controls="pills-link" aria-selected="false">JioLink</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-saavn-tab" data-toggle="pill" href="#pills-saavn" role="tab"
+                            aria-controls="pills-saavn" aria-selected="false">JioSaavn Pro</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-others-tab" data-toggle="pill" href="#pills-others" role="tab"
+                            aria-controls="pills-others" aria-selected="false">Others</a>
+                    </li>
+                </ul>
+
+                <!------------------------------------------------- Plan Details ----------------------------------------------------->
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- -----------------------Popular Plans----------------------- -->
+                    <div class="tab-pane fade show active" id="pills-popular" role="tabpanel"
+                        aria-labelledby="pills-popular-tab">
+                        <div class="accordion" id="accordionExample">
+
+                            <!-- --------------2 GB/DAY PACKS------------- -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            2 GB/DAY PACKS
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">598</th>
+                                                    <td>56 days</td>
+                                                    <td>Unlimited 112GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2599</th>
+                                                    <td>365 days</td>
+                                                    <td>Unlimited 740GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2399</th>
+                                                    <td>365 days</td>
+                                                    <td>730GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">599</th>
+                                                    <td>84 days</td>
+                                                    <td>168GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">444</th>
+                                                    <td>56 days</td>
+                                                    <td>112GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">249</th>
+                                                    <td>28 days</td>
+                                                    <td>56GB UNLIMITED</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- -------------1.5 GB/DAY PACKS------------- -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            1.5 GB/DAY PACKS
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">777</th>
+                                                    <td>84 days</td>
+                                                    <td>Unlimited 131GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2121 </th>
+                                                    <td>336 days</td>
+                                                    <td>504GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">555</th>
+                                                    <td>84 days</td>
+                                                    <td>126GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">399</th>
+                                                    <td>56 days</td>
+                                                    <td>84GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">199</th>
+                                                    <td>28 days</td>
+                                                    <td>42GB UNLIMITED</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- -------------1 GB/DAY PACKS------------- -->
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            1 GB/DAY PACKS
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">149</th>
+                                                    <td>24 days</td>
+                                                    <td>24GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ------------3 GB/DAY PACKS------------ -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                                            aria-controls="collapseFour">
+                                            3 GB/DAY PACKS
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse " aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">401</th>
+                                                    <td>28 days</td>
+                                                    <td>Unlimited 90GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">999</th>
+                                                    <td>84 days</td>
+                                                    <td>252GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">349</th>
+                                                    <td>28 days</td>
+                                                    <td>84GB UNLIMITED</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- -------------LONG TERM PACKS------------- -->
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+                                            aria-controls="collapseFive">
+                                            LONG TERM PACKS
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse " aria-labelledby="headingFive"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">4999</th>
+                                                    <td>360 days</td>
+                                                    <td>350GB UNLIMITED</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--------------------- jiocricket ----------------------->
+                    <div class="tab-pane fade" id="pills-cricket" role="tabpanel" aria-labelledby="pills-cricket-tab">
+
+                        <div class="accordion" id="accordionExample1">
+
+                            <!-- -------------Cricket Pack------------- -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne1">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true"
+                                            aria-controls="collapseOne1">
+                                            Cricket Pack
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1"
+                                    data-parent="#accordionExample1">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">499</th>
+                                                    <td>56 days</td>
+                                                    <td>84GB & disney+ Hotstar</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- -------------PACKS WITH VOICE------------- -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo1">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo1" aria-expanded="false"
+                                            aria-controls="collapseTwo1">
+                                            PACKS WITH VOICE
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo1"
+                                    data-parent="#accordionExample1">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">598</th>
+                                                    <td>56 days</td>
+                                                    <td>Unlimited 112GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">401</th>
+                                                    <td>28 days</td>
+                                                    <td>Unlimited 90GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">777</th>
+                                                    <td>84days</td>
+                                                    <td>Unlimited 131GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2599</th>
+                                                    <td>365 days</td>
+                                                    <td>Unlimited 740GB & Disney + Hotstar</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- -------------DATA ADD ON PACKS------------- -->
+                            <div class="card">
+                                <div class="card-header" id="headingThree1">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false"
+                                            aria-controls="collapseThree1">
+                                            DATA ADD ON PACKS
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1"
+                                    data-parent="#accordionExample1">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1208</th>
+                                                    <td>240days</td>
+                                                    <td>Unlimited 240GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1206</th>
+                                                    <td>180 days</td>
+                                                    <td>Unlimited 240GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1004</th>
+                                                    <td>120 days</td>
+                                                    <td>Unlimited 200GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">612</th>
+                                                    <td>Existing Plan</td>
+                                                    <td>Unlimited 72GB + 6000 minutes Jio to Non-Jio</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- --------------------jiophone----------------------- -->
+                    <div class="tab-pane fade" id="pills-phone" role="tabpanel" aria-labelledby="pills-phone-tab">
+
+                        <!-- ----JIO ALL-IN-ONE PLANS PACKS----- -->
+                        <div class="accordion" id="accordionExample2">
+                            <div class="card">
+                                <div class="card-header" id="headingOne2">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true"
+                                            aria-controls="collapseOne2">
+                                            JIO ALL-IN-ONE PLANS
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2"
+                                    data-parent="#accordionExample2">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">185</th>
+                                                    <td>28 days</td>
+                                                    <td>56GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">155</th>
+                                                    <td>28 days</td>
+                                                    <td>28GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">125</th>
+                                                    <td>28 days</td>
+                                                    <td>14GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">75</th>
+                                                    <td>28 days</td>
+                                                    <td>3GB UNLIMITED</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----JioPhone 153- 1.5GB/DAY PACKS----- -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo2">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false"
+                                            aria-controls="collapseTwo2">
+                                            JioPhone 153- 1.5GB/DAY
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2"
+                                    data-parent="#accordionExample2">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">153 + 10(TopUp Voucher-IUC)</th>
+                                                    <td>28 days</td>
+                                                    <td>42GB + 124 ICU MINUTES</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">153 + 20(TopUp Voucher-IUC)</th>
+                                                    <td>28 days</td>
+                                                    <td>42GB + 249 ICU MINUTES</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">153 + 50(TopUp Voucher-IUC)</th>
+                                                    <td>28 days</td>
+                                                    <td>42GB + 656 ICU MINUTES</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">153 + 100(TopUp Voucher-IUC)</th>
+                                                    <td>28 days</td>
+                                                    <td>42GB + 1362 ICU MINUTES</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">153 + 500(TopUp Voucher-IUC)</th>
+                                                    <td>28 days</td>
+                                                    <td>42GB + 7012 ICU MINUTES</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">153 + 1000(TopUp Voucher-IUC)</th>
+                                                    <td>Larry</td>
+                                                    <td>42GB + 14074 ICU MINUTES</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----------------------4g data--------------------- -->
+                    <div class="tab-pane fade" id="pills-data4g" role="tabpanel" aria-labelledby="pills-data4g-tab">
+                        <div class="accordion" id="accordionExample3">
+
+                            <!-- Cricket Pack -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne3">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne3" aria-expanded="true"
+                                            aria-controls="collapseOne3">
+                                            Cricket Pack
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne3" class="collapse show" aria-labelledby="headingOne3"
+                                    data-parent="#accordionExample3">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">499</th>
+                                                    <td>56 days</td>
+                                                    <td>84GB & disney+ Hotstar</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Disney + Hotstar Packs -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo3">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo3" aria-expanded="false"
+                                            aria-controls="collapseTwo3">
+                                            Disney + Hotstar Packs
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo3" class="collapse" aria-labelledby="headingTwo3"
+                                    data-parent="#accordionExample3">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1208</th>
+                                                    <td>240days</td>
+                                                    <td>Unlimited 240GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1206</th>
+                                                    <td>180 days</td>
+                                                    <td>Unlimited 240GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1004</th>
+                                                    <td>120 days</td>
+                                                    <td>Unlimited 200GB & Disney + Hotstar</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">612</th>
+                                                    <td>Existing Plan</td>
+                                                    <td>Unlimited 72GB + 6000 minutes Jio to Non-Jio</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Work From Home Packs -->
+                            <div class="card">
+                                <div class="card-header" id="headingThree3">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false"
+                                            aria-controls="collapseThree3">
+                                            Work From Home Packs
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3"
+                                    data-parent="#accordionExample3">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">251</th>
+                                                    <td>30 days</td>
+                                                    <td>Unlimited 50GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">201</th>
+                                                    <td>30 days</td>
+                                                    <td>Unlimited 40GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">151</th>
+                                                    <td>30 days</td>
+                                                    <td>Unlimited 30GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4G Data Voucher -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour3">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour3" aria-expanded="false"
+                                            aria-controls="collapseFour3">
+                                            4G Data Voucher
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour3" class="collapse" aria-labelledby="headingFour3"
+                                    data-parent="#accordionExample3">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>Existing Plan</td>
+                                                    <td>Unlimited 800MB + 75 Minutes Jio to Non-Jio</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>Existing Plan</td>
+                                                    <td>Unlimited 2GB + 200 Minutes Jio to Non-Jio</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">51</th>
+                                                    <td>Existing Plan</td>
+                                                    <td>Unlimited 6GB + 500 Minutes Jio to Non-Jio</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">101</th>
+                                                    <td>Existing Plan</td>
+                                                    <td>Unlimited 12GB + 1000 Minutes Jio to Non-Jio</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- -----------------------Isd------------------------ -->
+                    <div class="tab-pane fade" id="pills-isd" role="tabpanel" aria-labelledby="pills-isd-tab">
+                        <h5>Global ISD Pack</h5>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">PLANS</th>
+                                    <th scope="col">VALIDITY</th>
+                                    <th scope="col">BENEFITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">501</th>
+                                    <td>28 days</td>
+                                    <td>Rs 424.58 ISD TalkTime</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                        Check out the ISD rates <a href="https://www.jio.com/jio-isd-recharge-plans">Here</a>!
+                    </div>
+
+                    <!-- ------------------international roaming---------------- -->
+                    <div class="tab-pane fade" id="pills-roaming" role="tabpanel" aria-labelledby="pills-roaming-tab">
+                        <div class="accordion" id="accordionExample4">
+
+                            <!-- In-Flight Connectivity Packs -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne4">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne4" aria-expanded="true"
+                                            aria-controls="collapseOne4">
+                                            In-Flight Connectivity Packs
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne4" class="collapse show" aria-labelledby="headingOne4"
+                                    data-parent="#accordionExample4">
+                                    <div class="card-body">
+
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">499</th>
+                                                    <td>1 Day</td>
+                                                    <td>250MB data, 100 mins Outgoing Voice Calls and 100 SMS</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">699</th>
+                                                    <td>1 Day</td>
+                                                    <td>500MB data, 100 mins Outgoing Voice Calls and 100 SMS</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">999</th>
+                                                    <td>1 Day</td>
+                                                    <td>1GB data, 100 mins Outgoing Voice Calls and 100 SMS</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <hr>
+                                        <ul>
+                                            <li>
+                                                Applicable for 22 Partner Airlines
+                                            </li>
+                                            <li>
+                                                Pack benefits are only applicable on our Partner Airlines and
+                                                destination. Please review the same by clicking ‘View Details’ before
+                                                purchasing the pack
+                                            </li>
+                                            <li>
+                                                Data and SMS services are available in all our Partner Airlines.
+                                                However, voice services are available only in select Airlines.
+                                            </li>
+                                            <li>Incoming calls are not allowed on these packs</li>
+                                            <li>
+                                                Incoming SMS is Free
+                                            </li>
+                                            <li>
+                                                Usage entitlements applicable only for Inflight communications
+                                            </li>
+                                            <li>Data speed may vary from Airline to Airlines</li>
+                                            <li>Voice data and SMS service availability will differ from airline to
+                                                airline, please check the detail before opting the pack</li>
+                                        </ul>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Value Packs without WiFi Calling -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo4">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo4" aria-expanded="false"
+                                            aria-controls="collapseTwo4">
+                                            Value Packs without WiFi Calling
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo4" class="collapse" aria-labelledby="headingTwo4"
+                                    data-parent="#accordionExample4">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1101</th>
+                                                    <td>28 Days</td>
+                                                    <td>Rs 933.05 IR usage</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1201</th>
+                                                    <td>28 Days</td>
+                                                    <td>Rs 1017.80 IR usage</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <hr>
+                                        <ul>
+                                            <li>
+                                                Value Pack Rs 1101 - Applicable for 100+ Countries
+                                            </li>
+                                            <li>
+                                                Value Pack rs 1201 - Applicable for 170 Countries
+                                            </li>
+                                        </ul>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Value Packs with WiFi Calling -->
+                            <div class="card">
+                                <div class="card-header" id="headingThree4">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree4" aria-expanded="false"
+                                            aria-controls="collapseThree4">
+                                            Value Packs with WiFi Calling
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree4" class="collapse" aria-labelledby="headingThree4"
+                                    data-parent="#accordionExample4">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1102</th>
+                                                    <td>28 Days</td>
+                                                    <td>Rs 933.20 IR usage</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1202</th>
+                                                    <td>28 Days</td>
+                                                    <td>Rs 1018.64 IR usage</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <hr>
+                                        <h5>Note:</h5>
+                                        <ul>
+                                            <li>
+                                                Value Pack `1102 - Applicable for 100+ Countries
+                                            </li>
+                                            <li>
+                                                Value Pack `1202 - Applicable for 170 Countries
+                                            </li>
+                                            <li>
+                                                Wi-Fi calling facility is allowed only for call back to India
+                                            </li>
+                                            <li>
+                                                Incoming calls on Wi-Fi can be received from anywhere in the world at Re
+                                                1
+                                            </li>
+                                            <li>
+                                                Outgoing SMS over Wi-Fi is not allowed. All incoming text messages will
+                                                be delivered without any charge
+                                            </li>
+                                            <li>
+                                                Voice Calling through Wi-Fi will be charged at Re.1 per minute to India
+                                            </li>
+                                            <li>
+                                                Video calls through Wi-Fi can be made on a Jio number only. You will be
+                                                charged at Re.1 per minute plus the data deduction will happen from the
+                                                data balance available in your base plan (The actual data usage of your
+                                                video call may vary)
+                                            </li>
+                                            <li>
+                                                For IR 1202 pack iPhone users, Wi-Fi calling facility is available in
+                                                limited countries
+                                            </li>
+                                        </ul>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Unlimited Packs without WiFi Calling -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour4" aria-expanded="false"
+                                            aria-controls="collapseFour4">
+                                            Unlimited Packs without WiFi Calling
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour4" class="collapse" aria-labelledby="headingFour4"
+                                    data-parent="#accordionExample4">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">575</th>
+                                                    <td>1 Day</td>
+                                                    <td>
+                                                        Unlimited Incoming and Outgoing Voice Calls, Data & SMS</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2875</th>
+                                                    <td>7 Days</td>
+                                                    <td>
+                                                        Unlimited Incoming and Outgoing Voice Calls, Data & SMS</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5751</th>
+                                                    <td>30 Days</td>
+                                                    <td>
+                                                        Unlimited Incoming and Outgoing Voice Calls, Data & SMS</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <hr>
+                                        <ul>
+                                            <li>Applicable for 22 Countries</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <h6>For more info please visit <a
+                                    href="https://www.jio.com/jio-prepaid-international-roaming-plans">here</a></h6>
+                        </div>
+                    </div>
+
+                    <!-- ---------------------Top Up-------------------- -->
+                    <div class="tab-pane fade" id="pills-topup" role="tabpanel" aria-labelledby="pills-topup-tab">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">PLANS</th>
+                                    <th scope="col">VALIDITY</th>
+                                    <th scope="col">BENEFITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1000</th>
+                                    <td>Unlimited</td>
+                                    <td>Rs 844.46 Talktime</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">500</th>
+                                    <td>Unlimited</td>
+                                    <td>Rs 420.73 Talktime</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">100</th>
+                                    <td>Unlimited</td>
+                                    <td>Rs 81.75 Talktime</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">50</th>
+                                    <td>Unlimited</td>
+                                    <td>Rs 39.37 Talktime</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">20</th>
+                                    <td>Unlimited</td>
+                                    <td>Rs 14.95 Talktime</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>Unlimited</td>
+                                    <td>Rs 7.47 Talktime</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- -----------------------JioLink---------------------- -->
+                    <div class="tab-pane fade" id="pills-link" role="tabpanel" aria-labelledby="pills-link-tab">
+                        <div class="accordion" id="accordionExample5">
+
+                            <!-- Monthly Packs -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne5">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne5" aria-expanded="true"
+                                            aria-controls="collapseOne5">
+                                            Monthly
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne5" class="collapse show" aria-labelledby="headingOne5"
+                                    data-parent="#accordionExample5">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">699</th>
+                                                    <td>28 days</td>
+                                                    <td>156GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quarterly packs -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo5">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo5" aria-expanded="false"
+                                            aria-controls="collapseTwo5">
+                                            Quarterly
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo5" class="collapse" aria-labelledby="headingTwo5"
+                                    data-parent="#accordionExample5">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">2099</th>
+                                                    <td>98 days</td>
+                                                    <td>538GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Half Yearly packs -->
+                            <div class="card">
+                                <div class="card-header" id="headingThree5">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree5" aria-expanded="false"
+                                            aria-controls="collapseThree5">
+                                            Half Yearly
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree5" class="collapse" aria-labelledby="headingThree5"
+                                    data-parent="#accordionExample5">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">4199</th>
+                                                    <td>196 days</td>
+                                                    <td>1076GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <h5>Note:</h5>
+                            <ul>
+                                <li>
+                                    These plans will work only for JioLink customer.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- JioSaavn Pro -->
+                    <div class="tab-pane fade" id="pills-saavn" role="tabpanel" aria-labelledby="pills-saavn-tab">
+
+                        <!-- Jio Saavn Pro Plans -->
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">PLANS</th>
+                                    <th scope="col">VALIDITY</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">399 <small>Save 7%</small></th>
+                                    <td>365 days</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">99</th>
+                                    <td>30 days</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- -----------------------Others--------------------- -->
+                    <div class="tab-pane fade" id="pills-others" role="tabpanel" aria-labelledby="pills-others-tab">
+                        <div class="accordion" id="accordionExample">
+
+                            <!-- AFFORDABLE PACKS -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne6">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne6" aria-expanded="true"
+                                            aria-controls="collapseOne6">
+                                            AFFORDABLE PACKS
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne6" class="collapse show" aria-labelledby="headingOne6"
+                                    data-parent="#accordionExample6">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1299</th>
+                                                    <td>336 days</td>
+                                                    <td>24GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">329</th>
+                                                    <td>84 days</td>
+                                                    <td>6GB UNLIMITED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">129</th>
+                                                    <td>28 days</td>
+                                                    <td>2GB UNLIMITED</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- JioPhone 594 - 0.5GB/PER DAY -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo6">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo6" aria-expanded="false"
+                                            aria-controls="collapseTwo6">
+                                            JioPhone 594 - 0.5GB/PER DAY
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo6" class="collapse" aria-labelledby="headingTwo6"
+                                    data-parent="#accordionExample6">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">594 + <small>10(TopUp Voucher- IUC)</small></th>
+                                                    <td>168 days</td>
+                                                    <td>84GB <small>124 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">594 + <small>20(TopUp Voucher- IUC)</small></th>
+                                                    <td>168 days</td>
+                                                    <td>84GB <small>249 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">594 + <small>50(TopUp Voucher- IUC)</small></th>
+                                                    <td>168 days</td>
+                                                    <td>84GB <small>656 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">594 + <small>100(TopUp Voucher- IUC)</small></th>
+                                                    <td>168 days</td>
+                                                    <td>84GB <small>1362 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">594 + <small>500(TopUp Voucher- IUC)</small></th>
+                                                    <td>168 days</td>
+                                                    <td>84GB <small>7012 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">594 + <small>1000(TopUp Voucher- IUC)</small></th>
+                                                    <td>168 days</td>
+                                                    <td>84GB <small>14074 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">594 </th>
+                                                    <td>168 days</td>
+                                                    <td>84GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- JioPhone 297 - 0.5GB/PER DAY -->
+                            <div class="card">
+                                <div class="card-header" id="headingThree6">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree6" aria-expanded="false"
+                                            aria-controls="collapseThree6">
+                                            JioPhone 297 - 0.5GB/PER DAY
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree6" class="collapse" aria-labelledby="headingThree6"
+                                    data-parent="#accordionExample6">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">297 + <small>10(TopUp Voucher- IUC)</small></th>
+                                                    <td>84 days</td>
+                                                    <td>42GB <small>124 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">297 + <small>20(TopUp Voucher- IUC)</small></th>
+                                                    <td>84 days</td>
+                                                    <td>42GB <small>249 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">297 + <small>50(TopUp Voucher- IUC)</small></th>
+                                                    <td>84 days</td>
+                                                    <td>42GB <small>656 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">297 + <small>100(TopUp Voucher- IUC)</small></th>
+                                                    <td>84 days</td>
+                                                    <td>42GB <small>1362 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">297 + <small>500(TopUp Voucher- IUC)</small></th>
+                                                    <td>84 days</td>
+                                                    <td>42GB <small>7012 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">297 + <small>1000(TopUp Voucher- IUC)</small></th>
+                                                    <td>84 days</td>
+                                                    <td>42GB <small>14074 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">297 </th>
+                                                    <td>84 days</td>
+                                                    <td>42GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- JioPhone 153- 1.5GB/PER DAY Packs -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour6">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour6" aria-expanded="false"
+                                            aria-controls="collapseFour6">
+                                            JioPhone 153- 1.5GB/PER DAY
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour6" class="collapse" aria-labelledby="headingFour6"
+                                    data-parent="#accordionExample6">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">153</th>
+                                                    <td>28 days</td>
+                                                    <td>42 GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- JioPhone 99 - 0.5GB/PER DAY Packs -->
+                            <div class="card">
+                                <div class="card-header" id="headingFive6">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFive6" aria-expanded="false"
+                                            aria-controls="collapseFive6">
+                                            JioPhone 99 - 0.5GB/PER DAY
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFive6" class="collapse" aria-labelledby="headingFive6"
+                                    data-parent="#accordionExample6">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">99 + <small>10(TopUp Voucher- IUC)</small></th>
+                                                    <td>28 days</td>
+                                                    <td>14GB <small>124 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">99 + <small>20(TopUp Voucher- IUC)</small></th>
+                                                    <td>28 days</td>
+                                                    <td>14GB <small>249 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">99 + <small>50(TopUp Voucher- IUC)</small></th>
+                                                    <td>28 days</td>
+                                                    <td>14GB <small>656 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">99 + <small>100(TopUp Voucher- IUC)</small></th>
+                                                    <td>28 days</td>
+                                                    <td>14GB <small>1362 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">99 + <small>500(TopUp Voucher- IUC)</small></th>
+                                                    <td>28 days</td>
+                                                    <td>14GB <small>7012 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">99 + <small>1000(TopUp Voucher- IUC)</small></th>
+                                                    <td>28 days</td>
+                                                    <td>14GB <small>14074 IUC Minutes</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">99 </th>
+                                                    <td>28 days</td>
+                                                    <td>14GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- postpaid Plans -->
+            <div class="tab-pane fade" id="pills-post" role="tabpanel" aria-labelledby="pills-postpaid-tab">
+
+                <!------------------ Postpaid Plan Headings --------------------->
+
+                <ul class="nav nav-justified nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-main-tab" data-toggle="pill" href="#pills-main" role="tab"
+                            aria-controls="pills-main" aria-selected="true">Main Plan</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-isd1-tab" data-toggle="pill" href="#pills-isd1" role="tab"
+                            aria-controls="pills-isd1" aria-selected="false">ISD</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-roaming1-tab" data-toggle="pill" href="#pills-roaming1" role="tab"
+                            aria-controls="pills-roaming1" aria-selected="false">International Roaming</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-saavn1-tab" data-toggle="pill" href="#pills-saavn1" role="tab"
+                            aria-controls="pills-saavn1" aria-selected="false">JioSaavn Pro</a>
+                    </li>
+                </ul>
+
+                <!-- ---------------Pack Details--------------- -->
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- ---------------Main Plan------------- -->
+                    <div class="tab-pane fade show active" id="pills-main" role="tabpanel"
+                        aria-labelledby="pills-main-tab">
+                        <div class="accordion" id="accordionExample7">
+                            <div class="card">
+                                <div class="card-header" id="headingOne7">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne7" aria-expanded="true"
+                                            aria-controls="collapseOne7">
+                                            POSTPAID PLUS
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne7" class="collapse show" aria-labelledby="headingOne7"
+                                    data-parent="#accordionExample7">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">399</th>
+                                                    <td>Bill cycle</td>
+                                                    <td>75GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">599</th>
+                                                    <td>Bill cycle</td>
+                                                    <td>100GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">799</th>
+                                                    <td>Bill cycle</td>
+                                                    <td>150GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">999</th>
+                                                    <td>Bill cycle</td>
+                                                    <td>200GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1499</th>
+                                                    <td>Bill cycle</td>
+                                                    <td>300GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo7">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo7" aria-expanded="false"
+                                            aria-controls="collapseTwo7">
+                                            REGULAR
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo7" class="collapse" aria-labelledby="headingTwo7"
+                                    data-parent="#accordionExample7">
+                                    <div class="card-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PLANS</th>
+                                                    <th scope="col">VALIDITY</th>
+                                                    <th scope="col">BENEFITS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">199</th>
+                                                    <td>Bill cycle</td>
+                                                    <td>25GB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- -------------ISD-------------- -->
+                    <div class="tab-pane fade" id="pills-isd1" role="tabpanel" aria-labelledby="pills-isd1-tab">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">PLANS</th>
+                                    <th scope="col">VALIDITY</th>
+                                    <th scope="col">BENEFITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">501</th>
+                                    <td>28days</td>
+                                    <td>Rs 424.58 <small>ISD TalkTime</small></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                        <h6>For more info visit <a href="https://www.jio.com/jio-isd-plans">here!</a>
+                        </h6>
+                    </div>
+
+                    <!-- --------------International Roaming------------- -->
+                    <div class="tab-pane fade" id="pills-roaming1" role="tabpanel" aria-labelledby="pills-roaming1-tab">
+                        <div class="accordion" id="accordionExample8">
+                            <div class="card">
+                                <div class="card-header" id="headingOne8">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne8" aria-expanded="true"
+                                            aria-controls="collapseOne8">
+                                            In-Flight Connectivity Packs
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne8" class="collapse show" aria-labelledby="headingOne8"
+                                    data-parent="#accordionExample8">
+                                    <div class="card-body">
+
+                                        <!-- ---pre on packs--- -->
+                                        <div class="accordion" id="accordionExample81">
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne81">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left" type="button"
+                                                            data-toggle="collapse" data-target="#collapseOne81"
+                                                            aria-expanded="true" aria-controls="collapseOne81">
+                                                            Pre on Post Inflight IR Pack
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapseOne81" class="collapse show"
+                                                    aria-labelledby="headingOne81" data-parent="#accordionExample81">
+                                                    <div class="card-body">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">PLANS</th>
+                                                                    <th scope="col">VALIDITY</th>
+                                                                    <th scope="col">BENEFITS</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">499</th>
+                                                                    <td>1 Day</td>
+                                                                    <td>250 MB data, 100 mins Outgoing Voice Calls and
+                                                                        100 SMS
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">699</th>
+                                                                    <td>1 Day</td>
+                                                                    <td>
+                                                                        500 MB data, 100 mins Outgoing Voice Calls and
+                                                                        100 SMS</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">999</th>
+                                                                    <td>1 Day</td>
+                                                                    <td>1 GB data, 100 mins Outgoing Voice Calls and 100
+                                                                        SMS</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <hr>
+                                                        <ul>
+                                                            <li>
+                                                                Applicable for 22 Partner Airlines
+                                                            </li>
+                                                            <li>
+                                                                Pack benefits are only applicable on our Partner
+                                                                Airlines and destination. Please review the same by
+                                                                clicking ‘View Details’ before purchasing the pack
+                                                            </li>
+                                                            <li>
+                                                                Data and SMS services are available in all our Partner
+                                                                Airlines. However, voice services are available only in
+                                                                select Airlines.
+                                                            </li>
+                                                            <li>
+                                                                Incoming calls are not allowed on these packs
+                                                            </li>
+                                                            <li>
+                                                                Incoming SMS is Free
+                                                            </li>
+                                                            <li>
+                                                                Usage entitlements applicable only for Inflight
+                                                                communications
+                                                            </li>
+                                                            <li>
+                                                                Data speed may vary from Airline to Airline
+                                                            </li>
+                                                            <li>
+                                                                Voice data and SMS service availability will differ from
+                                                                airline to airline, please check the detail before
+                                                                opting the pack
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingTwo8">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo8" aria-expanded="false"
+                                            aria-controls="collapseTwo8">
+                                            Prepaid Pack that Work on Postpaid
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo8" class="collapse" aria-labelledby="headingTwo8"
+                                    data-parent="#accordionExample8">
+                                    <div class="card-body">
+
+                                        <div class="accordion" id="accordionExample82">
+
+                                            <!-- ---Value Packs without WiFi Calling--- -->
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne82">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left" type="button"
+                                                            data-toggle="collapse" data-target="#collapseOne82"
+                                                            aria-expanded="true" aria-controls="collapseOne82">
+                                                            Value Packs without WiFi Calling
+                                                        </button>
+                                                    </h2>
+                                                </div>
+
+                                                <div id="collapseOne82" class="collapse show"
+                                                    aria-labelledby="headingOne82" data-parent="#accordionExample82">
+                                                    <div class="card-body">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">PLANS</th>
+                                                                    <th scope="col">VALIDITY</th>
+                                                                    <th scope="col">BENEFITS</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1101</th>
+                                                                    <td>28 Days</td>
+                                                                    <td>Rs 933.05 <small>IR usage</small></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">1201</th>
+                                                                    <td>28 Days</td>
+                                                                    <td>Rs 1017.80 <small>IR usage</small></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <hr>
+                                                        <ul>
+                                                            <li>
+                                                                Value Pack Rs 1101 - Applicable for 100+ Countries
+                                                            </li>
+                                                            <li>
+                                                                Value Pack Rs1201 - Applicable for 170 Countries
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ---Value Packs with WiFi Calling--- -->
+                                            <div class="card">
+                                                <div class="card-header" id="headingTwo82">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left collapsed"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseTwo82" aria-expanded="false"
+                                                            aria-controls="collapseTwo82">
+                                                            Value Packs with WiFi Calling
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapseTwo82" class="collapse" aria-labelledby="headingTwo82"
+                                                    data-parent="#accordionExample82">
+                                                    <div class="card-body">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">PLANS</th>
+                                                                    <th scope="col">VALIDITY</th>
+                                                                    <th scope="col">BENEFITS</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1102</th>
+                                                                    <td>28 Days</td>
+                                                                    <td>
+                                                                        Rs 933.20 <small>IR usage</small> </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">1202</th>
+                                                                    <td>28 Days</td>
+                                                                    <td>Rs 1018.64 <small>IR usage</small></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <ul>
+                                                            <li>
+                                                                Value Pack `1102 - Applicable for 100+ Countries
+                                                            </li>
+                                                            <li>
+                                                                Value Pack `1202 - Applicable for 170 Countries
+                                                            </li>
+                                                            <li>
+                                                                Wi-Fi calling facility is allowed only for call back to
+                                                                India
+                                                            </li>
+                                                            <li>
+                                                                Incoming calls on Wi-Fi can be received from anywhere in
+                                                                the world at Re 1
+                                                            </li>
+                                                            <li>
+                                                                Outgoing SMS over Wi-Fi is not allowed. All incoming
+                                                                text messages will be delivered without any charge
+                                                            </li>
+                                                            <li>
+                                                                Voice Calling through Wi-Fi will be charged at Re.1 per
+                                                                minute to India
+                                                            </li>
+                                                            <li>
+                                                                Video calls through Wi-Fi can be made on a Jio number
+                                                                only. You will be charged at Re.1 per minute plus the
+                                                                data deduction will happen from the data balance
+                                                                available in your base plan (The actual data usage of
+                                                                your video call may vary)
+                                                            </li>
+                                                            <li>
+                                                                For IR 1202 pack iPhone users, Wi-Fi calling facility is
+                                                                available in limited countries
+                                                            </li>
+                                                            <hr>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ---Unlimited Packs without WiFi Calling--- -->
+                                            <div class="card">
+                                                <div class="card-header" id="headingThree82">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left collapsed"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseThree82" aria-expanded="false"
+                                                            aria-controls="collapseThree82">
+                                                            Unlimited Packs without WiFi Calling
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapseThree82" class="collapse"
+                                                    aria-labelledby="headingThree82" data-parent="#accordionExample82">
+                                                    <div class="card-body">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">PLANS</th>
+                                                                    <th scope="col">VALIDITY</th>
+                                                                    <th scope="col">BENEFITS</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">575</th>
+                                                                    <td>1 Day</td>
+                                                                    <td>
+                                                                        Unlimited Incoming and Outgoing Voice Calls,
+                                                                        Data & SMS</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2875</th>
+                                                                    <td>7 Days</td>
+                                                                    <td>
+                                                                        Unlimited Incoming and Outgoing Voice Calls,
+                                                                        Data & SMS</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">5751</th>
+                                                                    <td>30 Days</td>
+                                                                    <td>
+                                                                        Unlimited Incoming and Outgoing Voice Calls,
+                                                                        Data & SMS</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <hr>
+                                                        <ul>
+                                                            <li>
+                                                                Applicable for 22 Countries
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- -------------JioSaavn Pro------------- -->
+                    <div class="tab-pane fade" id="pills-saavn1" role="tabpanel" aria-labelledby="pills-saavn1-tab">
+                        <h5>JIOSAAVN PRO PLANS</h5>
+                        <hr>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">PLANS</th>
+                                    <th scope="col">VALIDITY</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">399</th>
+                                    <td>365 days</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">99</th>
+                                    <td>30days</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark blue pt-4" style="color: white; margin-top: 100px;">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Official Website Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.jio.com/">Jio</a>
+                        </li>
+                        <li>
+                            <a href="https://www.airtel.in/">Airtel</a>
+                        </li>
+                        <li>
+                            <a href="https://www.myvi.in/">Vi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Official Website Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.jio.com/">Jio</a>
+                        </li>
+                        <li>
+                            <a href="https://www.airtel.in/">Airtel</a>
+                        </li>
+                        <li>
+                            <a href="https://www.myvi.in/">Vi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="index.html"> browseFast</a>
+        </div>
+    </footer>
+
+    <!------------------ JavaScript -------------------->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
